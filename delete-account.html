@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VITU - Account Deletion / 계정 삭제</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 24px 20px 48px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+    h2 { font-size: 18px; font-weight: 700; margin-top: 32px; margin-bottom: 12px; color: #222; }
+    p { margin-bottom: 12px; font-size: 15px; color: #333; }
+    .date { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .section { margin-top: 24px; }
+    .steps { margin: 16px 0; padding-left: 20px; }
+    .steps li { margin-bottom: 12px; font-size: 15px; color: #333; }
+    .note { background: #f5f5f5; border-radius: 8px; padding: 16px; margin-top: 24px; font-size: 14px; color: #555; }
+    .contact { margin-top: 32px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; }
+    .contact a { color: #4A90D9; text-decoration: none; }
+    .lang-toggle { text-align: right; margin-bottom: 16px; }
+    .lang-toggle a { font-size: 14px; color: #4A90D9; text-decoration: none; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="lang-toggle">
+    <a onclick="toggleLang()">한국어 / English</a>
+  </div>
+
+  <!-- English -->
+  <div id="en">
+    <h1>Account Deletion</h1>
+    <p class="date">VITU - AI Character Chat</p>
+
+    <div class="section">
+      <h2>How to Delete Your Account</h2>
+      <p>You can delete your account directly within the VITU app by following these steps:</p>
+      <ol class="steps">
+        <li>Open the VITU app and sign in to your account.</li>
+        <li>Go to the <strong>Profile</strong> tab (bottom right).</li>
+        <li>Tap <strong>Settings</strong> (gear icon).</li>
+        <li>Scroll down and tap <strong>Delete Account</strong>.</li>
+        <li>Confirm the deletion when prompted.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>What Data Is Deleted</h2>
+      <p>When you delete your account, the following data will be permanently removed:</p>
+      <ol class="steps">
+        <li>Your profile information (nickname, profile photo, personality settings)</li>
+        <li>All chat conversations with AI characters</li>
+        <li>Match history and swipe history</li>
+        <li>Authentication credentials</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Note:</strong> Account deletion is permanent and cannot be undone. All your data will be permanently deleted within 30 days of your request.
+    </div>
+
+    <div class="contact">
+      <h2>Need Help?</h2>
+      <p>If you are unable to access the app or need assistance with account deletion, please contact us at:</p>
+      <p><a href="mailto:jungjongseok@gmail.com">jungjongseok@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- Korean -->
+  <div id="ko" class="hidden">
+    <h1>계정 삭제</h1>
+    <p class="date">VITU - AI 캐릭터 채팅</p>
+
+    <div class="section">
+      <h2>계정 삭제 방법</h2>
+      <p>VITU 앱 내에서 직접 계정을 삭제할 수 있습니다:</p>
+      <ol class="steps">
+        <li>VITU 앱을 열고 로그인합니다.</li>
+        <li>하단의 <strong>Profile</strong> 탭을 선택합니다.</li>
+        <li><strong>Settings</strong> (톱니바퀴 아이콘)을 탭합니다.</li>
+        <li>아래로 스크롤하여 <strong>Delete Account</strong>를 탭합니다.</li>
+        <li>삭제 확인 메시지가 나타나면 확인합니다.</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>삭제되는 데이터</h2>
+      <p>계정 삭제 시 다음 데이터가 영구적으로 삭제됩니다:</p>
+      <ol class="steps">
+        <li>프로필 정보 (닉네임, 프로필 사진, 성격 설정)</li>
+        <li>AI 캐릭터와의 모든 채팅 대화</li>
+        <li>매칭 기록 및 스와이프 기록</li>
+        <li>인증 정보</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>참고:</strong> 계정 삭제는 영구적이며 되돌릴 수 없습니다. 요청 후 30일 이내에 모든 데이터가 영구 삭제됩니다.
+    </div>
+
+    <div class="contact">
+      <h2>도움이 필요하신가요?</h2>
+      <p>앱에 접근할 수 없거나 계정 삭제에 도움이 필요하시면 아래로 연락해주세요:</p>
+      <p><a href="mailto:jungjongseok@gmail.com">jungjongseok@gmail.com</a></p>
+    </div>
+  </div>
+
+  <script>
+    function toggleLang() {
+      document.getElementById('en').classList.toggle('hidden');
+      document.getElementById('ko').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
